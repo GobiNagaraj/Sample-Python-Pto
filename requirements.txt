@@ -7,3 +7,4 @@ openai
 openpyxl
 langchain_experimental
 python-dotenv
+langchain-community

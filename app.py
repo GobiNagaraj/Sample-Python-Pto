@@ -1,3 +1,8 @@
+pip install langchain-community
+pip install chat2plot
+pip install langchain-experimental
+pip install matplotlib
+
 from flask import Flask, request, jsonify
 from langchain.chat_models import ChatOpenAI
 from chat2plot import chat2plot

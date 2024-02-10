@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI  # Updated import statement
 from chat2plot import chat2plot
 # from langchain.agents import create_pandas_dataframe_agent
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent

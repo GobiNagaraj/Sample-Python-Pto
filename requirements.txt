@@ -1,12 +1,9 @@
 flask
 langchain
 chat2plot
-os
 pandas
 numpy
 openai
 openpyxl
 langchain_experimental
 python-dotenv
-ast
-re

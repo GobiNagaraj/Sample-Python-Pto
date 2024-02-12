@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI # Updated import statement
 from chat2plot import chat2plot
 # from langchain.agents import create_pandas_dataframe_agent
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
@@ -123,4 +123,5 @@ def analytics():
 
 # Run the Flask app
 if __name__ == "__main__":
-    app.run(debug=True)
+    # app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)

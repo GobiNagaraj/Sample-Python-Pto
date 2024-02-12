@@ -12,18 +12,12 @@ from dotenv import load_dotenv, find_dotenv
 import openai
 import re
 import ast
-import time
 
 # Load environment variables
 load_dotenv(find_dotenv())
 
 # Initialize Flask app
 app = Flask(__name__)
-
-# Wake up script for every 3 minutes
-while(True): 
-    print('hello geek!') 
-    time.sleep(3 * 60)
 
 # Define routes
 @app.route('/hello', methods=["GET", "POST"])

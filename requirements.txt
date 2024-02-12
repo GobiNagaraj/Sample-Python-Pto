@@ -8,3 +8,4 @@ openpyxl
 langchain_experimental
 python-dotenv
 matplotlib
+flask_cors

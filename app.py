@@ -12,12 +12,14 @@ from dotenv import load_dotenv, find_dotenv
 import openai
 import re
 import ast
+from flask_cors import CORS
 
 # Load environment variables
 load_dotenv(find_dotenv())
 
 # Initialize Flask app
 app = Flask(__name__)
+CORS(app)
 
 # Define routes
 @app.route('/hello', methods=["GET", "POST"])
